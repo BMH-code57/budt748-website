@@ -87,7 +87,7 @@
   font-weight: 700;
   position: relative;
 }
-.reach-out-to-the-course-team-for-support-or-inquiries {
+.contact-introduction {
   color: #d9d9d9;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -108,7 +108,7 @@
   position: relative;
   overflow: hidden;
 }
-.paul-t-shapiro {
+.brandon-contact {
   background: #1a2322;
   border-radius: 10px;
   border-style: solid;
@@ -126,7 +126,7 @@
   position: relative;
   overflow: hidden;
 }
-.paul-t-shapiro2 {
+.brandon-contact-name {
   color: #ffffff;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -134,109 +134,7 @@
   font-weight: 600;
   position: relative;
 }
-.pshapiro-umd-edu {
-  color: #a8ff35;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-}
-.bharath-sreekumar {
-  background: #1a2322;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: rgba(168, 255, 53, 0.3);
-  border-width: 1px;
-  padding: 30px 20px 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 280px;
-  height: 62px;
-  position: relative;
-  overflow: hidden;
-}
-.bharath-sreekumar2 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-}
-.bsreekum-umd-edu {
-  color: #a8ff35;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-}
-.caifu-lin {
-  background: #1a2322;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: rgba(168, 255, 53, 0.3);
-  border-width: 1px;
-  padding: 30px 20px 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 280px;
-  height: 62px;
-  position: relative;
-  overflow: hidden;
-}
-.caifu-lin2 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-}
-.clin-0817-terpmail-umd-edu {
-  color: #a8ff35;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: relative;
-}
-.sumanth-devara {
-  background: #1a2322;
-  border-radius: 10px;
-  border-style: solid;
-  border-color: rgba(168, 255, 53, 0.3);
-  border-width: 1px;
-  padding: 30px 20px 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 280px;
-  height: 62px;
-  position: relative;
-  overflow: hidden;
-}
-.sumanth-devara2 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  position: relative;
-}
-.sdevara-umd-edu {
+.brandon-contact-email {
   color: #a8ff35;
   text-align: center;
   font-family: "Montserrat", sans-serif;
