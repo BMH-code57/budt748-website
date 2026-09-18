@@ -4,10 +4,6 @@ const contactForm = document.getElementById('contact-form');
 if (contactForm) {
   const status = document.getElementById('draft-status');
   const draftLink = document.getElementById('draft-link');
-  const permittedRecipients = new Set([
-    'pshapiro@umd.edu', 'bsreekum@umd.edu',
-    'clin0817@terpmail.umd.edu', 'sdevara@umd.edu',
-  ]);
 
   contactForm.addEventListener('input', () => { status.hidden = true; });
   contactForm.addEventListener('change', () => { status.hidden = true; });
@@ -25,8 +21,7 @@ if (contactForm) {
       return;
     }
     const data = new FormData(contactForm);
-    const recipient = data.get('recipient');
-    if (!permittedRecipients.has(recipient)) return;
+    const recipient = 'bholda@umd.edu';
     const subject = String(data.get('subject')).trim();
     const body = `${String(data.get('message')).trim()}\n\nFrom: ${String(data.get('name')).trim()}\nReply to: ${String(data.get('email')).trim()}`;
     draftLink.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
