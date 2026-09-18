@@ -1,0 +1,39 @@
+/* Contact page styles. Bootstrap supplies the grid, controls and validation. */
+.contact-section { padding: 45px 0 50px; }
+.contact-section .eyebrow { color: #677d51; margin-bottom: 14px; }
+.contact-section h2 { margin-bottom: 14px; font-size: 34px; }
+.contact-copy { max-width: 380px; color: #5e705f; font-size: 13px; }
+.contact-list { margin: 26px 0 18px; }
+.contact-person { display: flex; align-items: center; gap: 15px; padding: 15px 0; border-bottom: 1px solid #d7dfcf; }
+.contact-person:first-child { padding-top: 0; }
+.contact-initials { display: grid; place-items: center; flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%; background: #e2ebd5; color: #5b7840; font-size: 11px; font-weight: 600; }
+.contact-person p { font-size: 9px; color: #6a7c61; margin-bottom: 4px; }
+.contact-person h3 { font-size: 14px; margin-bottom: 3px; letter-spacing: -.02em; }
+.contact-person a { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; font-size: 11px; color: #567541; overflow-wrap: anywhere; }
+.contact-person a:hover { text-decoration: underline; }
+.contact-person .icon { width: 13px; height: 13px; }
+.message-card { background: #fcfdf7; border: 1px solid #d7dfce; border-radius: 13px; box-shadow: 0 8px 26px #223d2810; }
+.message-card .card-body { padding: 29px; }
+.form-heading { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.form-heading h2 { font-size: 24px; margin: 0; }
+.form-heading > span { color: #6a8a45; font-size: 27px; }
+.form-description { color: #627260; font-size: 11px; max-width: 470px; margin: 10px 0 23px; }
+.form-label { font-size: 10px; font-weight: 600; color: #41513c; margin-bottom: 7px; }
+.form-label span { color: #6d804e; }
+.form-control, .form-select { background-color: #f6f8ef; color: #273b32; border-color: #d6ddcb; border-radius: 6px; padding: 12px 13px; font-size: 11px; min-height: 44px; }
+.form-select { padding-right: 36px; }
+.form-control::placeholder { color: #788571; opacity: 1; }
+.form-control:focus, .form-select:focus { color: #273b32; background-color: #fcfdf7; border-color: #719c44; box-shadow: 0 0 0 3px #7eac4d22; }
+textarea.form-control { resize: vertical; min-height: 110px; }
+.invalid-feedback { font-size: 10px; }
+.form-bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 23px; }
+.form-bottom p { margin: 0; font-size: 9px; color: #6e7f62; }
+.form-bottom .btn { font-size: 11px; }
+.alert { font-size: 12px; }
+@media (max-width: 575.98px) {
+  .contact-section { padding-top: 34px; }
+  .message-card .card-body { padding: 21px; }
+  .form-heading h2 { font-size: 22px; }
+  .form-bottom { flex-wrap: wrap; }
+  .contact-person a { font-size: 10px; }
+}
