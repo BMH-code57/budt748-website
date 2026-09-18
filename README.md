@@ -1,4 +1,4 @@
-# Brandon Holda — BUDT748 website
+# Brandon Holda: BUDT748 website
 
 Live website: https://bmh-code57.github.io/budt748-website/
 
@@ -51,7 +51,7 @@ The tutorial contains conflicting sample semesters (Spring 2025 and Spring 2027)
 
 This site uses the official Bootstrap **5.3.8** distribution. The tutorial demonstrates Bootstrap 5.3.0; this site uses a newer release in the same 5.3 family. Bootstrap is loaded before the custom CSS. The JavaScript bundle is loaded on every page, which is necessary for the mobile collapse menu.
 
-Files are served locally instead of using the CDN, so the site works without an external network connection. The distribution retains its upstream MIT license.
+Files are served locally instead of using the CDN, so the site works without an external network connection. The distribution retains its upstream MIT license. Its default blockquote attribution separator has been customized to omit the em dash.
 
 ## Contact form behavior
 
