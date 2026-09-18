@@ -1,5 +1,9 @@
 # Brandon Holda — BUDT748 website
 
+Live website: https://bmh-code57.github.io/budt748-website/
+
+Repository: https://github.com/BMH-code57/budt748-website
+
 A three-page client-side technology project for Fall 2026. The visual style uses a deep green-black background, lime accents, Montserrat typography, and consistent page navigation.
 
 ## Open the site
@@ -39,7 +43,7 @@ Primary source: **BUDT748_Fall2026_ClientSideTechTutorial.pdf**, Dr. Shapiro, 11
 | Bootstrap CSS, navbar, grid, buttons, form controls (pages 9–11) | Local official Bootstrap CSS and JS; real collapse navbar; rows/columns; buttons; cards; form controls and validation |
 | Correct page links | All links use exact lowercase filenames, including `index.html` |
 | Figma frames and export/conversion (pages 2–7) | **Pending Figma access.** The HTML was authored directly; it has not been exported from Figma or generated with AutoHTML |
-| GitHub push and Pages deployment (page 11) | Repository: https://github.com/BMH-code57/budt748-website. Deployment is being configured; no live URL has been verified yet |
+| GitHub push and Pages deployment (page 11) | Completed: files committed on main and published at https://bmh-code57.github.io/budt748-website/. All three live pages verified |
 
 The tutorial contains conflicting sample semesters (Spring 2025 and Spring 2027). The assignment semester is shown as Fall 2026. BMGT407 information and teaching-team contacts are labeled as tutorial examples; the site does not assert that these TAs are the current BUDT748 teaching team.
 
