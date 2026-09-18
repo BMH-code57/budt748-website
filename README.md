@@ -14,6 +14,8 @@ Home follows the tutorial's Montserrat 60px bold heading, 32px subtitle, 30px sp
 
 Each frame was converted separately using **AutoHTML | Components to Code**. The downloaded generated HTML and CSS were used as the starting point for the published pages. The exports' layout and class names are retained. The files were renamed to the tutorial's structure, fonts were connected to local Montserrat files, and semantic headings and functional links were added.
 
+The untouched original ZIPs are preserved in [design/autohtml](design/autohtml). The published HTML is formatted for convenient editing in VS Code.
+
 The tutorial's numbered instructions specify Spring 2027, while its illustration shows Spring 2025. This project follows the numbered instruction and labels the semester as tutorial sample information. The assignment footer says BUDT748 Fall 2026.
 
 ## Project structure
