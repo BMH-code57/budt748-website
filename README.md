@@ -10,7 +10,7 @@ A three-page website for BUDT748 Fall 2026, based on Dr. Shapiro's Client-Side T
 
 The Figma file contains native editable Landing Page, About Page, and Contact Page frames. All three are 1440px wide and 1024px high, with a 12-column grid, 80px margins, and 20px gutters. Headers display Brandon Holda, with Homepage, About, and Contact navigation.
 
-Home follows the tutorial's Montserrat 60px bold heading, 32px subtitle, 30px spacing, and lime #A8FF35 button sized 180 by 57px with 10px corners and a drop shadow. About includes the tutorial's BMGT407 course description, professor, teaching assistants, and Spring 2027 semester. Contact includes the specified title, subtitle, and all four tutorial email addresses.
+Home follows the tutorial's Montserrat 60px bold heading, 32px subtitle, 30px spacing, and lime #A8FF35 button sized 180 by 57px with 10px corners and a drop shadow. About includes the tutorial's BMGT407 course description, professor, teaching assistants, and Spring 2027 semester. Contact was personalized after conversion to show Brandon Holda at bholda@umd.edu, with an email-draft form addressed only to Brandon.
 
 Each frame was converted separately using **AutoHTML | Components to Code**. The downloaded generated HTML and CSS were used as the starting point for the published pages. The exports' layout and class names are retained. The files were renamed to the tutorial's structure, fonts were connected to local Montserrat files, and semantic headings and functional links were added.
 
@@ -46,7 +46,7 @@ Responsive refinements replace fixed frame heights with flexible page heights, a
 
 ## Contact form
 
-The form validates required fields and email syntax, then prepares an encoded email draft for the selected tutorial team member. The visitor reviews and sends it in their email app. The static site has no backend and does not claim to send messages. Direct email links also work without JavaScript.
+The form validates required fields and email syntax, then prepares an encoded email draft to Brandon Holda at bholda@umd.edu. The visitor reviews and sends it in their email app. The static site has no backend and does not claim to send messages. Direct email links also work without JavaScript.
 
 ## Open in VS Code
 
@@ -54,6 +54,6 @@ Open this folder with **File > Open Folder**. There is no installation or build 
 
 ## Testing and deployment
 
-All three pages were checked at 320, 375, 768, 1024, and 1440px. Checks cover headings, personalized branding, active links, Bootstrap loading, mobile menu opening and closing, horizontal overflow, all nine navigation combinations, Get Started, contact validation, all four recipients, and rendering without JavaScript.
+All three pages were checked at 320, 375, 768, 1024, and 1440px. Checks cover headings, personalized branding, active links, Bootstrap loading, mobile menu opening and closing, horizontal overflow, all nine navigation combinations, Get Started, contact validation, the fixed Brandon Holda recipient, and rendering without JavaScript.
 
 GitHub Pages publishes the repository's `main` branch from `/ (root)`. The live URL and repository URL above are the assignment links.
