@@ -1,70 +1,57 @@
 # Brandon Holda: BUDT748 website
 
-Live website: https://bmh-code57.github.io/budt748-website/
+A three-page website for BUDT748 Fall 2026, based on Dr. Shapiro's Client-Side Technology Tutorial.
 
-Repository: https://github.com/BMH-code57/budt748-website
+- [Live website](https://bmh-code57.github.io/budt748-website/)
+- [GitHub repository](https://github.com/BMH-code57/budt748-website)
+- [Editable Figma design](https://www.figma.com/design/PeztrXUaCcjbeFy3fRZXaY/Brandon-Holda---BUDT748-Website-Design)
 
-A three-page client-side technology project for Fall 2026. The visual style uses a deep green-black background, lime accents, Montserrat typography, and consistent page navigation.
+## Figma design and conversion
 
-## Open the site
+The Figma file contains native editable Landing Page, About Page, and Contact Page frames. All three are 1440px wide and 1024px high, with a 12-column grid, 80px margins, and 20px gutters. Headers display Brandon Holda, with Homepage, About, and Contact navigation.
 
-Open `index.html` in a browser, or open this folder in VS Code and use the Live Server extension. All fonts and Bootstrap files are included locally. There is no build step or package installation.
+Home follows the tutorial's Montserrat 60px bold heading, 32px subtitle, 30px spacing, and lime #A8FF35 button sized 180 by 57px with 10px corners and a drop shadow. About includes the tutorial's BMGT407 course description, professor, teaching assistants, and Spring 2027 semester. Contact includes the specified title, subtitle, and all four tutorial email addresses.
 
-## Files
+Each frame was converted separately using **AutoHTML | Components to Code**. The downloaded generated HTML and CSS were used as the starting point for the published pages. The exports' layout and class names are retained. The files were renamed to the tutorial's structure, fonts were connected to local Montserrat files, and semantic headings and functional links were added.
+
+The tutorial's numbered instructions specify Spring 2027, while its illustration shows Spring 2025. This project follows the numbered instruction and labels the semester as tutorial sample information. The assignment footer says BUDT748 Fall 2026.
+
+## Project structure
 
 ```text
-index.html                 Home
-about.html                 About
-contact.html               Contact
-css/styles.css             Shared styles and Home layout
-css/styles2.css             About styles
-css/styles3.css             Contact styles
-css/fonts.css              Local Montserrat font definitions
-js/site.js                 Contact form validation and draft preparation
-images/                    Original vector assets
-fonts/                     Montserrat fonts and OFL license
-vendor/bootstrap/          Official Bootstrap 5.3.8 CSS, JS bundle, license
-.nojekyll                  Publish these files directly with GitHub Pages
+index.html                   Home, converted from Landing Page
+about.html                   About, converted from About Page
+contact.html                 Contact, converted from Contact Page
+css/styles.css               Generated Home CSS, normalized font families
+css/styles2.css              Generated About CSS, normalized font families
+css/styles3.css              Generated Contact CSS, normalized font families
+css/responsive.css           Bootstrap integration and responsive refinements
+css/fonts.css                Local Montserrat font definitions
+images/                      Website assets and design exports
+js/site.js                   Contact form validation and email draft preparation
+fonts/                       Montserrat fonts and license
+vendor/bootstrap/            Bootstrap 5.3.8 CSS, JS bundle, and license
+.nojekyll                    GitHub Pages static publishing configuration
 ```
 
-## Tutorial requirements
+## Bootstrap and responsive behavior
 
-Primary source: **BUDT748_Fall2026_ClientSideTechTutorial.pdf**, Dr. Shapiro, 11 pages.
+Every page loads Bootstrap before its generated CSS and custom refinements, and includes the Bootstrap JavaScript bundle. The navbar uses `navbar-expand-lg` with a working collapse toggle. Contact cards and form fields use Bootstrap rows, columns, cards, buttons, form controls, validation feedback, and an alert.
 
-| Requirement | Implementation |
-| --- | --- |
-| Three connected pages (pages 1, 7) | `index.html`, `about.html`, `contact.html` |
-| Personalized header | Brandon Holda appears in the header on all pages and links to Home |
-| Home hero, subtitle, Get Started button (pages 4–5) | Centered Home hero; lime button opens About |
-| About course description and professor/TA details (pages 5–6) | Tutorial BMGT407 course description and all four teaching-team members |
-| Contact title, supporting text, professor/TA emails (pages 6–7) | Contact introduction, all four email links, recipient selector |
-| Separate CSS files and images folder (page 7) | Shared `styles.css`, `styles2.css`, `styles3.css`, and `images/` |
-| Responsive styles and interactions (pages 8–9) | Mobile layouts, focus styles, hover styles, reduced-motion support |
-| Bootstrap CSS, navbar, grid, buttons, form controls (pages 9–11) | Local official Bootstrap CSS and JS; real collapse navbar; rows/columns; buttons; cards; form controls and validation |
-| Correct page links | All links use exact lowercase filenames, including `index.html` |
-| Figma frames and export/conversion (pages 2–7) | **Pending Figma access.** The HTML was authored directly; it has not been exported from Figma or generated with AutoHTML |
-| GitHub push and Pages deployment (page 11) | Completed: files committed on main and published at https://bmh-code57.github.io/budt748-website/. All three live pages verified |
+Bootstrap 5.3.8 is included locally so the website works offline. The tutorial demonstrates 5.3.0, and the implementation remains within the same 5.3 family. Licenses are included.
 
-The tutorial contains conflicting sample semesters (Spring 2025 and Spring 2027). The assignment semester is shown as Fall 2026. BMGT407 information and teaching-team contacts are labeled as tutorial examples; the site does not assert that these TAs are the current BUDT748 teaching team.
+Responsive refinements replace fixed frame heights with flexible page heights, allow text and cards to fit small screens, and correct clipped contact-card content. Keyboard focus and a skip link are available. Navigation remains accessible without JavaScript.
 
-## Bootstrap integration
+## Contact form
 
-This site uses the official Bootstrap **5.3.8** distribution. The tutorial demonstrates Bootstrap 5.3.0; this site uses a newer release in the same 5.3 family. Bootstrap is loaded before the custom CSS. The JavaScript bundle is loaded on every page, which is necessary for the mobile collapse menu.
+The form validates required fields and email syntax, then prepares an encoded email draft for the selected tutorial team member. The visitor reviews and sends it in their email app. The static site has no backend and does not claim to send messages. Direct email links also work without JavaScript.
 
-Files are served locally instead of using the CDN, so the site works without an external network connection. The distribution retains its upstream MIT license. Its default blockquote attribution separator has been customized to omit the em dash.
+## Open in VS Code
 
-## Contact form behavior
+Open this folder with **File > Open Folder**. There is no installation or build step. Open `index.html` in your browser, or use the VS Code Live Server extension. The HTML, CSS, fonts, and Bootstrap files are all included.
 
-The form checks required fields, rejects whitespace-only names/subjects/messages, and validates email syntax. It prepares a properly encoded `mailto:` link for the selected teaching-team member. The visitor explicitly opens their email app and sends the draft themselves.
+## Testing and deployment
 
-The site has no backend and never claims a message has been sent. Editing a field hides the old draft status. Direct email links remain available without JavaScript.
+All three pages were checked at 320, 375, 768, 1024, and 1440px. Checks cover headings, personalized branding, active links, Bootstrap loading, mobile menu opening and closing, horizontal overflow, all nine navigation combinations, Get Started, contact validation, all four recipients, and rendering without JavaScript.
 
-## GitHub Pages deployment
-
-Repository: https://github.com/BMH-code57/budt748-website. Place the contents of this folder in its root, commit, and push. Preserve any existing repository files unless replacement is agreed.
-
-In **Settings → Pages**, choose **Deploy from a branch**, select the branch containing the site (normally `main`), choose **/ (root)**, and save. The Pages URL for a project repository normally has the form `https://OWNER.github.io/REPOSITORY/`.
-
-Do not submit an assumed URL. Wait for the Pages deployment to succeed and check all three live pages before recording the live link.
-
-Official references: [Bootstrap integration](https://getbootstrap.com/docs/5.3/getting-started/introduction/) and [GitHub Pages publishing sources](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+GitHub Pages publishes the repository's `main` branch from `/ (root)`. The live URL and repository URL above are the assignment links.
